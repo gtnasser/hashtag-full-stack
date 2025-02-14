@@ -1,35 +1,86 @@
-import React from "react"
+import React from "react";
 
 const App2 = () => {
-    return <h1>Olá Mundo!</h1>
-}
+  console.log("Olá, Mundo!");
 
-export default App2
+  return <div>App2</div>;
+};
 
+export default App2;
 
 // rafce
 
-// const App = () => <h1>Olá Mundo!</h1>
+// Arrow Function
+// const App2 = () => <h1>Olá, Mundo!</h1>;
 
-// nomeação de componentes: PascalCase
+// Nomeação de Componente
+// PascalCase
 
-// nomeação de variável, função, etc : camelCase
+// Nomeação de Variavel, Função...
+// camelCase
 
-// export default posso importar com qualquer nome e sem chaves
-// export "sem default" só posso importar com o nome exportado e entre chaves
+// export default, posso importar com qualquer nome e sem chaves
+// export "sem default", só posso importar entre chaves e com o nome exportado
 
-// self closing tag: <Header></Header> -> <Header />
+// Self closing tag
+// <Header></Header>
+// <Header/>
 
-// nomeacao de classes em CSS: metodologia BEM
+// element.style {
+//   background-color: antiquewhite;
+//   padding: 20px;
+//   margin: 20px;
+//   border: solid 5px black;
+//   /* box-sizing: content-box; */
+//   width: 500px;
+// }
+
+// Nomeação de classes em CSS
+// Metodologia BEM
 // Blocks
 // Elements
 // Modifiers
 // bloco__elemento--modificador
-// ex:
-//   header
-//   header__link
-//   header__link--small
-// nomes compostos sao separados por hifen
-// ex: list-item
+// header
+// header__link
+// header__link--small
+// item-list__header
+// Nomes compostos são separados por -
 
-// <> Tag vazia = Fragment
+// Tag vazia em React se chama Fragment ou Fragmento
+
+// Componentes recebem "props"
+
+{
+  /* {items === 5 ? (
+          <>
+            <SingleItem />
+            <SingleItem />
+            <SingleItem />
+            <SingleItem />
+            <SingleItem />
+          </>
+        ) : (
+          <>
+            <SingleItem />
+            <SingleItem />
+            <SingleItem />
+            <SingleItem />
+            <SingleItem />
+            <SingleItem />
+            <SingleItem />
+            <SingleItem />
+            <SingleItem />
+            <SingleItem />
+          </>
+        )} */
+}
+
+// Array(items)
+//           .fill()
+//           .map((currentValue, index) => (
+//             <SingleItem key={`${title}-${index}`} />
+//           ))
+
+// Spread operator
+// ...
