@@ -5,7 +5,7 @@
 import { MongoClient } from "mongodb";
 
 const URI =
-  "mongodb+srv://spotify:S1p2o3t4@clusterfreeaws.18kfo.mongodb.net/?retryWrites=true&w=majority&appName=ClusterFreeAws"
+  "mongodb+srv://<db_username>:<db_password>@clusterfreeaws.18kfo.mongodb.net/?retryWrites=true&w=majority&appName=ClusterFreeAws"
 
 const client = new MongoClient(URI)
 

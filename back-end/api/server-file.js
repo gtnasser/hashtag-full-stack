@@ -7,10 +7,10 @@
 import express from "express";
 import cors from "cors";
 
-import { artistArray } from "../../front-end/src/assets/database/artists.js"
-import { songsArray } from "../../front-end/src/assets/database/songs.js"
+import { artistArray } from "./migrations/artists.js"
+import { songsArray } from "./migrations/songs.js"
 const app = express();
-const PORT = 3001;
+const PORT = 3002;
 
 app.use(cors());
 // app.use(express.json());
