@@ -1,6 +1,6 @@
 import axios from "axios"
 
-const URL = "http://127.0.0.1:3001"
+const URL = "http://127.0.0.1:3001/api"
 
 const responseArtists = await axios.get(`${URL}/artists`)
 console.log(responseArtists);

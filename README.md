@@ -15,6 +15,7 @@ Link das aulas auxiliares/complementares:
     - [Estilizando a Home - Aula 1](https://youtu.be/sJcyKmc_GMw)
     - [Página de Artista + Início da Música - Aula 2](https://youtu.be/EuVdTqyPvyk)
     - [Ajustes Finais + Responsividade - Aula 3](https://youtu.be/_WBCQOy1Vfc)
+- [GIT e Deploy - complementar Aula 4](https://www.youtu.be/Ft1eS6c11w0&t=0s)
 
 Para [validar a sua presença nas aulas](https://hashaqui.com/certificados/jornada-fullstack) (necessário para o certificado)
 <!--
@@ -57,6 +58,35 @@ Criar uma aplicação, baseada no Spotify:
 - conectar front com o backend usando a API
 - criar lógicas do player (play/pause, progress)
 
+## DEPLOY
+
+1. preparar para a execução em um servidor de ```npm run build``` e ```npm run start```
+
+- criar um *package.json* global (temos 2, um para back-end e outro para front-end) com ```npm init -y```
+- alterar em *scripts* para automatizar a instalação e execução dos builds de front-end e back-end:
+```json
+scripts: {
+  "build": "npm install --prefix back-end && npm install --prefix front-end && npm run build --prefix front-end",
+  "start": "npm run start --prefix back-end"
+}
+```
+- criar em *front-end/vite.config.js*:
+```javascript
+build: {
+  target: "esnext",
+}
+```
+- incluir em *back-end/package.json*:
+```json
+scripts: {
+  "start": "node ./api/server-mongodb.js",
+}
+
+2. criar configuração em variáveis de ambiente
+
+- diferenciar endpoints do back-end e do front-end, trocando chamadas do back-end de "/" para "/api/",
+
+- adicionar ```.env``` no *.gitignore*
 
 ## Para executar este projeto
 
@@ -72,7 +102,7 @@ git clone http://github.com/gtnasser/hashtag-full-stack
 cd hashtag-full-stack
 ```
 
-### BACK-END
+### Para executar somente o BACK-END
 
 Abra um terminal e na pasta do projeto execute:
 ```shell
@@ -96,7 +126,7 @@ curl http://localhost:3001/artists
 node api\migrations\0001-insert-mongodb.js
 ```
 
-### FRONT-END
+### Para executar somente o FRONT-END
 
 Abra um terminal e na pasta do projeto execute:
 ```shell
@@ -104,4 +134,6 @@ cd front-end
 npm i
 npm run dev
 ```
-Abrir o navegador na página: http://localhost:5174/
+Abrir o navegador na página: http://localhost:5173/
+
+

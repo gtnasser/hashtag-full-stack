@@ -15,15 +15,15 @@ const PORT = 3001;
 app.use(cors());
 // app.use(express.json());
 
-app.get("/", (request, response) => {
+app.get("/api/", (request, response) => {
   response.send("Só vamos trabalhar com os endpoints '/artists' e '/songs'");
 });
 
-app.get("/artists", async (request, response) => {
+app.get("/api/artists", async (request, response) => {
 response.send(artistArray)
 });
 
-app.get("/songs", async (request, response) => {
+app.get("/api/songs", async (request, response) => {
 response.send(songsArray)
 });
 
