@@ -29,7 +29,7 @@ const ItemList = ({ title, items, itemsArray, path, idPath }) => {
           .filter((currentValue, index) => index < finalItems)
           .map((currObj, index) => (
             <SingleItem
-              // id={currObj.id}
+              // id={currObj._id}
               // name={currObj.name}
               // image={currObj.image}
               // banner={currObj.banner}

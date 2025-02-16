@@ -11,7 +11,7 @@ const Artist = () => {
   // console.log(useParams());
 
   const { name, banner } = artistArray.filter(
-    (currentArtistObj) => currentArtistObj._id === id
+    (currentArtistObj) => String(currentArtistObj._id) === id
   )[0];
 
   const songsArrayFromArtist = songsArray.filter(

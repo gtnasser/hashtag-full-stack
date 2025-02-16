@@ -9,7 +9,7 @@ const Song = () => {
   // console.log(id);
 
   const { image, name, duration, artist, audio } = songsArray.filter(
-    (currentSongObj) => currentSongObj._id === id
+    (currentSongObj) => String(currentSongObj._id) === id
   )[0];
   // console.log(songObj);
 
