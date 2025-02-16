@@ -35,15 +35,19 @@ Criar uma aplicação, baseada no Spotify:
 
 ## AULA 1
 
+- criar app usando React
+- criar telas de Artistas e Músicas
+
+
 ## AULA 2
+
+- criar componentes Artistas e Músicas
+- criar rotas
 
 ## AULA 3
 
-Aula 1: A gente vai começar o nosso projeto completo, criando a interface do aplicativo de uma réplica do Spotify usando HTML, CSS, JavaScript e o React. Tudo isso, passo a passo e linha a linha de código para você conseguir acompanhar sem nenhuma dificuldade;
-Aula 2: Aprender a criar o Backend do projeto, usando Express e Node, e conectando com o banco de dados em MongoDB, para poder criar e controlar todas as lógicas do aplicativo;
-Aula 3: Conectar tudo que você aprendeu nas duas primeiras aulas e criar um player de áudio completo;
-Aula 4: Finalizar todo o projeto dando deploy e disponibilizando essa réplica do Spotify em um site e colocando no seu portfólio para melhorar o seu currículo
-
+- criar componentes Música
+- refactor telas
 
 ## AULA 4
 
@@ -52,17 +56,7 @@ Aula 4: Finalizar todo o projeto dando deploy e disponibilizando essa réplica d
 - conectar API com o Banco de dados
 - conectar front com o backend usando a API
 - criar lógicas do player (play/pause, progress)
-*-* github e deploy
 
-- dividir o projeto em front-end e back-end, o que fizemos ate agora vai para front-end
-- no back-end vamos criar um novo projeto com: $ npm init -y
-- alterar package.json incluindo: "type": module
-
-- Atlas Mongo DB
-  - criar database, criar collections: artists e songs, incluir um documento
-  - network access: criar IP 0.0.0.0 para facilitar o deploy
-  - Database access > Database users > + add new database users (spotify/zt3hW6pn8NhnS6rm)
-  - cluster > connect > drivers
 
 ## Para executar este projeto
 
@@ -103,3 +97,11 @@ node api\migrations\0001-insert-mongodb.js
 ```
 
 ### FRONT-END
+
+Abra um terminal e na pasta do projeto execute:
+```shell
+cd front-end
+npm i
+npm run dev
+```
+Abrir o navegador na página: http://localhost:5174/
