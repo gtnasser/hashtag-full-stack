@@ -4,15 +4,17 @@ import { db } from "../connect.js";
 
 // mongodb tem o seu proprio identificador (_id), vamos remover o nosso (id)
 
+// se precisar transformar os dados originais
+
 const newArtistArray = artistArray.map((currentArtistObj) => {
   const newArtistObj = { ...currentArtistObj };
-  delete newArtistObj.id;
+//  delete newArtistObj.id;
   return newArtistObj;
 });
 
 const newSongsArray = songsArray.map((currentSongObj) => {
   const newSongObj = { ...currentSongObj };
-  delete newSongObj.id;
+//  delete newSongObj.id;
   return newSongObj;
 });
 
