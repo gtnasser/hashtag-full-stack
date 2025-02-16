@@ -21,10 +21,6 @@ npm create vite@latest .
 - remover App.css
 - remover codigo do App.jsx (deixar somente function App() vazia)
 
-## Aula 4
-
-
-
 ---------
 
 VSCode
